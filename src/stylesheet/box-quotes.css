@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+:root {
+    --br: 8%;
+}
+
+.box-quote {
+    background-color: rgb(30, 92, 155);
+    width: 100vh;
+    display: grid;
+    gap: 0rem;
+    grid-auto-rows: minmax(fit-content, auto);
+    grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+    font-family: 'Raleway', sans-serif;
+    color: rgb(42, 85, 165);
+    margin-top: 29%;
+    border-radius: var(--br);
+}
+
+.box-text {
+    background: linear-gradient(180deg, rgb(189, 189, 149), rgb(168, 168, 223));
+    width: inherit;
+    min-height: 22vh;
+    padding: 1.5rem 1.5rem;
+    padding-left: 2rem;
+    user-select: none;
+    border-radius: var(--br);
+}
+
+.icon-container {
+    background: linear-gradient(180deg, rgb(169, 169, 114), rgb(92, 92, 160));
+    display: flex;
+    height: fit-content;
+    width: inherit;
+    margin-top: 0rem;
+    border-radius: var(--br);
+}
+
+svg {
+    height: 10vh;
+    width: auto;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+#comilla {
+    height: 7vh !important;
+    user-select: none !important;
+    cursor: none !important;
+    transform: none !important;
+    border: none !important;
+}
+
+.boton {
+    width: 23vh;
+    height: 4rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(19, 16, 16);
+    margin-left: 40vh;
+    border-radius: var(--br);
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 0.35rem;
+}
+
+.boton:hover {
+    border: 0.2rem solid wheat;
+    box-shadow: inset;
+    background-color: beige;
+    color: blue;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+svg:hover {
+    border: 0.2rem solid wheat;
+    box-shadow: inset;
+    font-size: 2rem;
+    transform: rotate(45deg);
+}

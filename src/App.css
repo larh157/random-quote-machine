@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    z-index: -2;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    /* background-color: rgb(42, 85, 165); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.lista {
+    display: grid;
+    gap: 0rem;
+    grid-auto-rows: minmax(fit-content, auto);
+    grid-template-columns: repeat(auto-fit, minmax(fit-content, 1fr));
+    text-align: center;
+    font-size: 2rem;
+    /* list-style: ; */
+    margin: 2rem 2rem;
+}
+
+.listaAutor {
+    font-size: 1.7rem;
+    font-style: italic;
+    text-align: end !important;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.753);
+}
